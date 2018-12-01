@@ -21,7 +21,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'src', 'index.html'));
 });
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   const html = `
     <p>Welcome. Be sure to configure your Stripe test mode secret key after you have forked this sandbox.</p>
   `;
