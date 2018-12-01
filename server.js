@@ -10,6 +10,8 @@ const uuidv4 = require('uuid/v4');
 const apiKeySecret = 'sk_test_p400mgzsN1bhB9vnIvubRhbp';
 
 const app = express();
+const stripe = Stripe(apiKeySecret);
+const upload = multer();
 // the __dirname is the current directory from where the script is running
 app.use(express.static(__dirname));
 
