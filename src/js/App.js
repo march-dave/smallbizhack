@@ -11,6 +11,7 @@ import $ from "jquery";
 import utf8 from "utf8";
 
 import { connect } from "react-redux";
+import Payment from "./Payment";
 
 const mapStateToProps = state => {
   return {
@@ -25,7 +26,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <div className="container-fluid">Hi </div>;
+    return (
+      <div className="container-fluid">
+        <Payment />
+      </div>
+    );
   }
 }
 
